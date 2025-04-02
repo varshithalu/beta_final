@@ -58,12 +58,14 @@ const Auth = ({
                       />
                       <div className="new-account mt-3">
                         <p className="mb-0">
+                          <br />
                           Welcome to{" "}
                           <a className="text-primary">
-                            ERES: Your Health, Our Priority
+                            BETA: Empowering Diabetes Care
                           </a>{" "}
-                          where compassionate care meets exceptional medical
-                          expertise. <FaArrowRightLong />
+                          where AI & Blockchain ensure secure and effective
+                          management of your health.
+                          <FaArrowRightLong />
                           <a
                             className="text-primary"
                             onClick={() => (address ? "" : connectMetaMask())}

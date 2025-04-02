@@ -70,6 +70,204 @@ const AddPatient = ({ registerDoctors }) => {
               aria-label="Close"
             />
           </div>
+          {/* <div className="modal-body">
+            <form>
+              <div className="row">
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">Title</label>
+                    <select
+                      onChange={(e) =>
+                        setPatient({
+                          ...patient,
+                          title: e.target.value,
+                        })
+                      }
+                      className="form-control"
+                    >
+                      <option value="Miss">Miss</option>
+                      <option value="Mr.">Mr.</option>
+                      <option value="Mrs.">Mrs.</option>
+                    </select>
+                  </div>
+                </div>
+                <Input
+                  name={"First Name"}
+                  type={"text"}
+                  handleChange={(e) =>
+                    setPatient({ ...patient, firstName: e.target.value })
+                  }
+                />
+                <Input
+                  name={"Last Name"}
+                  type={"text"}
+                  handleChange={(e) =>
+                    setPatient({ ...patient, lastName: e.target.value })
+                  }
+                />
+                <div className="w-50">
+                  <label className="col-form-label">Gender:</label>
+                  <select
+                    className="form-control"
+                    onChange={(e) =>
+                      setDoctor({ ...doctor, gender: e.target.value })
+                    }
+                  >
+                    <option value="" disabled selected>
+                      Select Gender
+                    </option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                </div>
+                <div className="row">
+                  <Input
+                    name={"Phone No."}
+                    type={"text"}
+                    handleChange={(e) =>
+                      setPatient({ ...patient, mobile: e.target.value })
+                    }
+                  />
+
+                  <Input
+                    name={"Email"}
+                    type={"text"}
+                    handleChange={(e) =>
+                      setPatient({ ...patient, emailID: e.target.value })
+                    }
+                  />
+                  <Input
+                    name={"Date Of Birth"}
+                    type={"date"}
+                    handleChange={(e) =>
+                      setPatient({ ...patient, birth: e.target.value })
+                    }
+                  />
+                  <Input
+                    name={"City"}
+                    type={"text"}
+                    handleChange={(e) =>
+                      setPatient({ ...patient, city: e.target.value })
+                    }
+                  />
+                </div>
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">Address :</label>
+                    <textarea
+                      className="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows={3}
+                      placeholder="Enter your address"
+                      onChange={(e) =>
+                        setPatient({ ...patient, yourAddress: e.target.value })
+                      }
+                    />
+                  </div>
+                </div>
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">Medical Conditions</label>
+                    <select
+                      className="form-control"
+                      onChange={(e) =>
+                        setPatient({
+                          ...patient,
+                          medicalConditions: e.target.value,
+                        })
+                      }
+                    >
+                      <option value="">Select Condition</option>
+                      <option value="None">None</option>
+                      <option value="Hypertension">Hypertension</option>
+                      <option value="Neuropathy">Neuropathy</option>
+                      <option value="Retinopathy">Retinopathy</option>
+                      <option value="Kidney Disease">Kidney Disease</option>
+                      <option value="Cardiovascular Disease">
+                        Cardiovascular Disease
+                      </option>
+                      <option value="Foot Ulcers">Foot Ulcers</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">
+                      Currently Taking Medications:
+                    </label>
+                    <select
+                      className="form-control"
+                      onChange={(e) =>
+                        setPatient({
+                          ...patient,
+                          onMedications: e.target.value,
+                        })
+                      }
+                    >
+                      <option value="No">No</option>
+                      <option value="Yes">Yes</option>
+                    </select>
+                  </div>
+                </div>
+                <div className="col-xl-6">
+                  <div className="form-group">
+                    <label className="col-form-label">Consulting Doctor:</label>
+                    <select className="form-control" onChange={handleChange}>
+                      <option value="">Select Doctor</option>
+                      {registerDoctors?.map((doctor, index) => (
+                        <option key={index} value={doctor?.doctorID}>
+                          {doctor?.title} {doctor?.firstName} {doctor?.lastName}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>{" "}
+                <div className="col-xl-6">
+                  <div className="form-group">
+                    <label className="col-form-label">Upload Profile</label>
+                    <input
+                      size={16}
+                      className="form-control"
+                      id="file"
+                      onChange={handleImageChange}
+                      type="file"
+                    />
+                  </div>
+                </div>{" "}
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">Wallet Address</label>
+                    <input
+                      size={16}
+                      className="form-control"
+                      type="text"
+                      onChange={(e) =>
+                        setPatient({
+                          ...patient,
+                          walletAddress: e.target.value,
+                        })
+                      }
+                    />
+                  </div>
+                </div>{" "}
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">Message:</label>
+                    <textarea
+                      className="form-control"
+                      id="exampleFormControlTextarea2"
+                      rows={3}
+                      defaultValue={""}
+                      onChange={(e) =>
+                        setPatient({ ...patient, message: e.target.value })
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div> */}
           <div className="modal-body">
             <form>
               <div className="row">

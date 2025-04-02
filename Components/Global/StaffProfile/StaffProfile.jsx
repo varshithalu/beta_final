@@ -45,7 +45,7 @@ const StaffProfile = () => {
                             <p className="ms-2 mb-0">Female</p>
                           </div>
                           <div className="d-flex align-items-center mb-2">
-                            <h4 className="mb-0">Degrer :</h4>
+                            <h4 className="mb-0">Degree :</h4>
                             <p className="ms-2 mb-0">BSN</p>
                           </div>
                           <div className="d-flex align-items-center mb-2">

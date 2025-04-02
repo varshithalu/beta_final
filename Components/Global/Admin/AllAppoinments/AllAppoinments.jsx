@@ -77,63 +77,7 @@ const AllAppoinments = ({
     fetchData();
   }, []);
 
-  const appoinment = [
-    {
-      image: "images/doctors/1.jpg",
-      date: "8 Aug 2021",
-      name: "Matthew",
-      email: "gabriel@gmail.com	",
-      from: "12:00",
-      to: "13:00	",
-      doctor: "Dr. HANI B BARADI",
-      contact: "9876512345",
-      condition: "Fever",
-    },
-    {
-      image: "images/doctors/2.jpg",
-      date: "8 Aug 2021",
-      name: "Matthew",
-      email: "gabriel@gmail.com	",
-      from: "12:00",
-      to: "13:00	",
-      doctor: "Dr. HANI B BARADI",
-      contact: "9876512345",
-      condition: "Fever",
-    },
-    {
-      image: "images/doctors/3.jpg",
-      date: "8 Aug 2021",
-      name: "Matthew",
-      email: "gabriel@gmail.com	",
-      from: "12:00",
-      to: "13:00	",
-      doctor: "Dr. HANI B BARADI",
-      contact: "9876512345",
-      condition: "Fever",
-    },
-    {
-      image: "images/doctors/4.jpg",
-      date: "8 Aug 2021",
-      name: "Matthew",
-      email: "gabriel@gmail.com	",
-      from: "12:00",
-      to: "13:00	",
-      doctor: "Dr. HANI B BARADI",
-      contact: "9876512345",
-      condition: "Fever",
-    },
-    {
-      image: "images/doctors/5.jpg",
-      date: "8 Aug 2021",
-      name: "Matthew",
-      email: "gabriel@gmail.com	",
-      from: "12:00",
-      to: "13:00	",
-      doctor: "Dr. HANI B BARADI",
-      contact: "9876512345",
-      condition: "Fever",
-    },
-  ];
+  const appoinment = [];
 
   //FILTER
   const onHandleSearch = (value) => {

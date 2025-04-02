@@ -5,11 +5,11 @@ const Footer = () => {
     <div className="footer">
       <div className="copyright">
         <p>
-          Copyright © Designed &amp; Developed by
-          <a href="https://www.theblockchaincoders.com/" target="_blank">
-            @theblockchaincoders
+          Copyright © Reserved &amp; Developed by
+          <a href="#" target="_blank">
+            @tech_marvericks
           </a>
-          2023
+          2025
         </p>
       </div>
     </div>

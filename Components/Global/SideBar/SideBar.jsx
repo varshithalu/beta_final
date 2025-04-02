@@ -190,12 +190,12 @@ const SideBar = ({
         </div>
         <div className="copyright">
           <p className="fs-14 font-w200">
-            <strong className="font-w400">TBC Hospital Admin Dashboard</strong>©
-            2023 All Rights Reserved
+            <strong className="font-w400">
+              "GlucoGuard - Secure Diabetes Care with AI & Blockchain"
+            </strong>{" "}
+            <br />© 2025 All Rights Reserved
           </p>
-          <p className="fs-12">
-            Made with <span className="heart" /> by @theblockchaincoders
-          </p>
+          <p className="fs-12">Made with ❤️ by @tech_marvericks</p>
         </div>
       </div>
     </div>

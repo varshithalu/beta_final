@@ -15,19 +15,18 @@ const AddDoctor = ({ setAddDocotr }) => {
     firstName: "",
     lastName: "",
     gender: "",
-    degrer: "",
+    degree: "",
     yourAddress: "",
-    designation: "",
-    lastWork: "",
+    email_ID: "",
     mobile: "",
-    emailID: "",
     collageName: "",
-    collageID: "",
+    collage_ID: "",
+    collageAddress: "",
+    registrationID: "",
+    specialization: "",
+    Last_worked_in: "",
     joiningYear: "",
     endYear: "",
-    specialization: "",
-    registrationID: "",
-    collageAddress: "",
     walletAddress: "",
     image: "",
     biography: "",
@@ -247,6 +246,215 @@ const AddDoctor = ({ setAddDocotr }) => {
               </div>
             </div>
           </div>
+          {/* <div className="modal-body">
+            <div>
+              <div className="row">
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">Title:</label>
+                    <select
+                      className="form-control"
+                      onChange={(e) =>
+                        setDoctor({ ...doctor, title: e.target.value })
+                      }
+                    >
+                      <option value="Dr">Dr.</option>
+                    </select>
+                  </div>
+                </div>
+                <Input
+                  name={"Name"}
+                  type={"text"}
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, firstName: e.target.value })
+                  }
+                />
+                <Input
+                  name={"Last Name"}
+                  type={"text"}
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, lastName: e.target.value })
+                  }
+                />
+                <div className="form-group d-flex gap-3">
+                  <div className="w-50">
+                    <label className="col-form-label">Gender:</label>
+
+                    <select
+                      className="form-control"
+                      onChange={(e) =>
+                        setDoctor({ ...doctor, gender: e.target.value })
+                      }
+                    >
+                      <option value="" disabled selected>
+                        Select Gender
+                      </option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+                  </div>
+
+                  <Input
+                    name={"Degree"}
+                    type={"text"}
+                    handleChange={(e) =>
+                      setDoctor({ ...doctor, degree: e.target.value })
+                    }
+                  />
+                </div>
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">Address :</label>
+                    <textarea
+                      className="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows={3}
+                      placeholder="Enter your address "
+                      onChange={(e) =>
+                        setDoctor({ ...doctor, yourAddress: e.target.value })
+                      }
+                    />
+                  </div>
+                </div>{" "}
+                <Input
+                  name={"Email ID"}
+                  type={"email"}
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, emailID: e.target.value })
+                  }
+                />
+                <Input
+                  name={"Mobile No."}
+                  type={"tel"}
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, mobile: e.target.value })
+                  }
+                />
+                <Input
+                  name={"College Name"}
+                  type={"text"}
+                  className="form-control"
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, collageName: e.target.value })
+                  }
+                />
+                <Input
+                  name={"College ID"}
+                  type={"text"}
+                  className="form-control"
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, collageID: e.target.value })
+                  }
+                />
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">Collage Address :</label>
+                    <textarea
+                      className="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows={3}
+                      placeholder="Enter your collage address "
+                      onChange={(e) =>
+                        setDoctor({ ...doctor, collageAddress: e.target.value })
+                      }
+                    />
+                  </div>
+                </div>
+                <Input
+                  name={"Registration ID"}
+                  type={"text"}
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, registrationID: e.target.value })
+                  }
+                />
+                <div className="form-group d-flex gap-3">
+                  <div className="w-50">
+                    <label className="col-form-label">Specialization:</label>
+                    <select
+                      className="form-control"
+                      onChange={(e) =>
+                        setDoctor({ ...doctor, specialization: e.target.value })
+                      }
+                    >
+                      <option value="Specialization">
+                        Select Specialization
+                      </option>
+                      <option value="Diabetes Consultant">
+                        Diabetes Consultant
+                      </option>
+                      <option value="Endocrinologist">Endocrinologist</option>
+                      <option value="General Practitioner">
+                        General Practitioner
+                      </option>
+                      <option value="Pediatric Endocrinologist">
+                        Pediatric Endocrinologist
+                      </option>
+                    </select>
+                  </div>
+
+                  <Input
+                    name={"Last Worked In"}
+                    type={"text"}
+                    className="form-control"
+                    handleChange={(e) =>
+                      setDoctor({ ...doctor, lastWork: e.target.value })
+                    }
+                  />
+                </div>
+                <Input
+                  name={"Joining Year"}
+                  type={"date"}
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, joiningYear: e.target.value })
+                  }
+                />
+                <Input
+                  name={"End Year"}
+                  type={"date"}
+                  handleChange={(e) =>
+                    setDoctor({ ...doctor, endYear: e.target.value })
+                  }
+                />
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">Wallet Address</label>
+                    <input
+                      size={16}
+                      className="form-control"
+                      type="text"
+                      onChange={(e) =>
+                        setDoctor({ ...doctor, walletAddress: e.target.value })
+                      }
+                    />
+                  </div>
+                </div>
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">Upload Profile</label>
+                    <input
+                      className="form-control"
+                      id="file"
+                      onChange={handleImageChange}
+                      type="file"
+                    />
+                  </div>
+                </div>
+                <div className="col-xl-12">
+                  <div className="form-group">
+                    <label className="col-form-label">Biography:</label>
+                    <textarea
+                      className="form-control"
+                      id="exampleFormControlTextarea2"
+                      rows={3}
+                      onChange={(e) =>
+                        setDoctor({ ...doctor, biography: e.target.value })
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
           <div className="modal-footer">
             <button
               type="button"

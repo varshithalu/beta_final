@@ -24,7 +24,7 @@ const Doctor = ({ setOpenComponent, setDoctorDetails }) => {
       name: "Doctor Name",
     },
     {
-      name: "EmailID",
+      name: "Email ID",
     },
     {
       name: "Appointment",
@@ -37,88 +37,7 @@ const Doctor = ({ setOpenComponent, setDoctorDetails }) => {
     },
   ];
 
-  const doctors = [
-    {
-      id: "#P-00012",
-      image: "images/doctors/1.jpg",
-      date: "26/02/2020, 12:42 AM",
-      doctor: "Dr. Samantha",
-      specialist: "Dentist",
-      schedule: 3,
-      contact: "+12 4124 5125",
-      status: "Unavailable",
-    },
-    {
-      id: "#P-00012",
-      image: "images/doctors/2.jpg",
-      date: "26/02/2020, 12:42 AM",
-      doctor: "Dr. Samantha",
-      specialist: "Dentist",
-      schedule: 3,
-      contact: "+12 4124 5125",
-      status: "Unavailable",
-    },
-    {
-      id: "#P-00012",
-      image: "images/doctors/3.jpg",
-      date: "26/02/2020, 12:42 AM",
-      doctor: "Dr. Samantha",
-      specialist: "Dentist",
-      schedule: 0,
-      contact: "+12 4124 5125",
-      status: "Unavailable",
-    },
-    {
-      id: "#P-00012",
-      image: "images/doctors/4.jpg",
-      date: "26/02/2020, 12:42 AM",
-      doctor: "Dr. Samantha",
-      specialist: "Dentist",
-      schedule: 2,
-      contact: "+12 4124 5125",
-      status: "Available",
-    },
-    {
-      id: "#P-00012",
-      image: "images/doctors/5.jpg",
-      date: "26/02/2020, 12:42 AM",
-      doctor: "Dr. Samantha",
-      specialist: "Dentist",
-      schedule: 7,
-      contact: "+12 4124 5125",
-      status: "Unavailable",
-    },
-    {
-      id: "#P-00012",
-      image: "images/doctors/1.jpg",
-      date: "26/02/2020, 12:42 AM",
-      doctor: "Dr. Samantha",
-      specialist: "Dentist",
-      schedule: 0,
-      contact: "+12 4124 5125",
-      status: "Unavailable",
-    },
-    {
-      id: "#P-00012",
-      image: "images/doctors/2.jpg",
-      date: "26/02/2020, 12:42 AM",
-      doctor: "Dr. Samantha",
-      specialist: "Dentist",
-      schedule: 1,
-      contact: "+12 4124 5125",
-      status: "Available",
-    },
-    {
-      id: "#P-00012",
-      image: "images/doctors/3.jpg",
-      date: "26/02/2020, 12:42 AM",
-      doctor: "Dr. Samantha",
-      specialist: "Dentist",
-      schedule: 3,
-      contact: "+12 4124 5125",
-      status: "Unavailable",
-    },
-  ];
+  const doctors = [];
 
   useEffect(() => {
     const fetchData = async () => {
